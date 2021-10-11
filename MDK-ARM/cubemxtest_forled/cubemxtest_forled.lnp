@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"cubemxtest_forled\startup_stm32f401xc.o"
+"cubemxtest_forled\main.o"
+"cubemxtest_forled\gpio.o"
+"cubemxtest_forled\usart.o"
+"cubemxtest_forled\stm32f4xx_it.o"
+"cubemxtest_forled\stm32f4xx_hal_msp.o"
+"cubemxtest_forled\stm32f4xx_hal_tim.o"
+"cubemxtest_forled\stm32f4xx_hal_tim_ex.o"
+"cubemxtest_forled\stm32f4xx_hal_uart.o"
+"cubemxtest_forled\stm32f4xx_hal_rcc.o"
+"cubemxtest_forled\stm32f4xx_hal_rcc_ex.o"
+"cubemxtest_forled\stm32f4xx_hal_flash.o"
+"cubemxtest_forled\stm32f4xx_hal_flash_ex.o"
+"cubemxtest_forled\stm32f4xx_hal_flash_ramfunc.o"
+"cubemxtest_forled\stm32f4xx_hal_gpio.o"
+"cubemxtest_forled\stm32f4xx_hal_dma_ex.o"
+"cubemxtest_forled\stm32f4xx_hal_dma.o"
+"cubemxtest_forled\stm32f4xx_hal_pwr.o"
+"cubemxtest_forled\stm32f4xx_hal_pwr_ex.o"
+"cubemxtest_forled\stm32f4xx_hal_cortex.o"
+"cubemxtest_forled\stm32f4xx_hal.o"
+"cubemxtest_forled\stm32f4xx_hal_exti.o"
+"cubemxtest_forled\system_stm32f4xx.o"
+--strict --scatter "cubemxtest_forled\cubemxtest_forled.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "cubemxtest_forled.map" -o cubemxtest_forled\cubemxtest_forled.axf

@@ -85,6 +85,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 		{
 			HAL_UART_Transmit(&huart1, (uint8_t *)&RxBuffer, Uart1_Rx_Cnt,0xFFFF); //将收到的信息发送出去
             while(HAL_UART_GetState(&huart1) == HAL_UART_STATE_BUSY_TX);//检测UART发送结束
+			
 			Uart1_Rx_Cnt = 0;
 			memset(RxBuffer,0x00,sizeof(RxBuffer)); //清空数组
 		}
@@ -126,7 +127,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-
+	HAL_UART_Receive_IT(&huart1, (uint8_t *)&aRxBuffer, 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -138,10 +139,10 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
     /* USER CODE BEGIN 2 */
-	HAL_UART_Receive_IT(&huart1, (uint8_t *)&aRxBuffer, 1);
+	
 /* USER CODE END 2 */
-    // HAL_Delay(1000);
-    // HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+    HAL_Delay(1000);
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
     // HAL_UART_Transmit(&huart1, (uint8_t *)ZZX, sizeof(ZZX), 0xffff);   //
     // printf("可以使用printf了哦\r\n");
   }

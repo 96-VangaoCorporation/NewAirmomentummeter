@@ -2363,6 +2363,7 @@ void HAL_UART_IRQHandler(UART_HandleTypeDef *huart)
 
   /* If no error occurs */
   errorflags = (isrflags & (uint32_t)(USART_SR_PE | USART_SR_FE | USART_SR_ORE | USART_SR_NE));
+  
   if (errorflags == RESET)
   {
     /* UART in mode Receiver -------------------------------------------------*/

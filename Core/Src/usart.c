@@ -22,43 +22,6 @@
 
 /* USER CODE BEGIN 0 */
 
-//加入以下代码,支持printf函数,而不需要选择use MicroLIB	  
-#if 1
-#pragma import(__use_no_semihosting)             
-//标准库需要的支持函数                 
-typedef struct __FILE 
-{ 
-	int handle; 
-}FILE; 
-
-FILE __stdout;   
-
-void _sys_exit(int x) 
-{ 
-	x = x; 
-} 
-
-//重定义fputc函数 
-int fputc(int ch, FILE *f)
-{ 	
-	HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, 0xffff);
-  return ch;
-}
-
-/**
-  * 函数功能: 重定向c库函数getchar,scanf到DEBUG_USARTx
-  * 输入参数: 无
-  * 返 回 值: 无
-  * 说    明：无
-  */
-int fgetc(FILE *f)
-{
-  uint8_t ch = 0;
-  HAL_UART_Receive(&huart1, &ch, 1, 0xffff);
-  return ch;
-}
-
-#endif
 
 /* USER CODE END 0 */
 
@@ -122,6 +85,11 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
     HAL_NVIC_SetPriority(USART1_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(USART1_IRQn);
   /* USER CODE BEGIN USART1_MspInit 1 */
+
+#if EN_USART1_RX
+		HAL_NVIC_EnableIRQ(USART1_IRQn);				//使能USART1中断通道
+		HAL_NVIC_SetPriority(USART1_IRQn,3,3);			//抢占优先级3，子优先级3
+#endif	
 
   /* USER CODE END USART1_MspInit 1 */
   }

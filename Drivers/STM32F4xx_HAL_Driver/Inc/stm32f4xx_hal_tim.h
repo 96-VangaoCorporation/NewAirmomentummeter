@@ -28,6 +28,8 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal_def.h"
 
+
+	
 /** @addtogroup STM32F4xx_HAL_Driver
   * @{
   */
@@ -329,6 +331,10 @@ typedef enum
   HAL_TIM_ACTIVE_CHANNEL_CLEARED  = 0x00U     /*!< All active channels cleared */
 } HAL_TIM_ActiveChannel;
 
+
+
+
+
 /**
   * @brief  TIM Time Base Handle Structure definition
   */
@@ -380,6 +386,8 @@ typedef struct
 #endif /* USE_HAL_TIM_REGISTER_CALLBACKS */
 } TIM_HandleTypeDef;
 
+
+
 #if (USE_HAL_TIM_REGISTER_CALLBACKS == 1)
 /**
   * @brief  HAL TIM Callback ID enumeration definition
@@ -415,6 +423,8 @@ typedef enum
   , HAL_TIM_COMMUTATION_HALF_CB_ID        = 0x19U   /*!< TIM Commutation half complete Callback ID                  */
   , HAL_TIM_BREAK_CB_ID                   = 0x1AU   /*!< TIM Break Callback ID                                      */
 } HAL_TIM_CallbackIDTypeDef;
+
+
 
 /**
   * @brief  HAL TIM Callback pointer definition

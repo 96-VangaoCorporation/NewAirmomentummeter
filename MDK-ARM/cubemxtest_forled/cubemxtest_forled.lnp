@@ -1,4 +1,4 @@
---cpu=Cortex-M4.fp.sp
+--cpu Cortex-M4.fp
 "cubemxtest_forled\startup_stm32f401xc.o"
 "cubemxtest_forled\main.o"
 "cubemxtest_forled\gpio.o"
@@ -22,7 +22,13 @@
 "cubemxtest_forled\stm32f4xx_hal.o"
 "cubemxtest_forled\stm32f4xx_hal_exti.o"
 "cubemxtest_forled\system_stm32f4xx.o"
+"cubemxtest_forled\usmart.o"
+"cubemxtest_forled\usmart_config.o"
+"cubemxtest_forled\usmart_str.o"
+"cubemxtest_forled\delay.o"
+"cubemxtest_forled\sys.o"
+"cubemxtest_forled\usart_vangao.o"
 --strict --scatter "cubemxtest_forled\cubemxtest_forled.sct"
---summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "cubemxtest_forled.map" -o cubemxtest_forled\cubemxtest_forled.axf

@@ -1,6 +1,8 @@
 #include "usmart.h"
-#include "usart.h"
+#include "usart_vangao.h"
 #include "sys.h" 
+
+#include "stm32f4xx_hal_tim.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //ALIENTEK STM32开发板	   
@@ -252,7 +254,8 @@ void Timer4_Init(u16 arr,u16 psc)
     TIM4_Handler.Init.CounterMode=TIM_COUNTERMODE_UP;    //向上计数器
     TIM4_Handler.Init.Period=arr;                        //自动装载值
     TIM4_Handler.Init.ClockDivision=TIM_CLOCKDIVISION_DIV1;
-    HAL_TIM_Base_Init(&TIM4_Handler);
+
+  	HAL_TIM_Base_Init(&TIM4_Handler);
     HAL_TIM_Base_Start_IT(&TIM4_Handler); //使能定时器4和定时器4中断 					 
 }
  

@@ -4,7 +4,7 @@
 //这下面要包含所用到的函数所申明的头文件(用户自己添加) 
 #include "delay.h"	 	
 #include "sys.h"
-#include "lcd.h"
+//#include "lcd.h"
 								 
 //extern void led_set(u8 sta);
 //extern void test_fun(void(*ledset)(u8),u8 sta);										  

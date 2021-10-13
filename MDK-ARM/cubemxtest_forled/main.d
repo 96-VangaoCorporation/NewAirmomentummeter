@@ -32,4 +32,6 @@ cubemxtest_forled\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart
 cubemxtest_forled\main.o: ../Core/Inc/usart.h
 cubemxtest_forled\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 cubemxtest_forled\main.o: ../Core/Inc/gpio.h
-cubemxtest_forled\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+cubemxtest_forled\main.o: ..\USMART\usmart.h
+cubemxtest_forled\main.o: ..\USMART\usmart_str.h
+cubemxtest_forled\main.o: ..\SYSTEM\sys\sys.h

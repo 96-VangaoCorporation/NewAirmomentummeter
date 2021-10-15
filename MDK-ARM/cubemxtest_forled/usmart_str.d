@@ -29,5 +29,7 @@ cubemxtest_forled\usmart_str.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ha
 cubemxtest_forled\usmart_str.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
 cubemxtest_forled\usmart_str.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 cubemxtest_forled\usmart_str.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+cubemxtest_forled\usmart_str.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+cubemxtest_forled\usmart_str.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 cubemxtest_forled\usmart_str.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 cubemxtest_forled\usmart_str.o: ..\Vangao\USMART\usmart.h

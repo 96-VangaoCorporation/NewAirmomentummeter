@@ -1,4 +1,4 @@
---cpu Cortex-M4.fp
+--cpu=Cortex-M4.fp.sp
 "cubemxtest_forled\startup_stm32f401xc.o"
 "cubemxtest_forled\main.o"
 "cubemxtest_forled\gpio.o"
@@ -29,6 +29,6 @@
 "cubemxtest_forled\sys.o"
 "cubemxtest_forled\usart_vangao.o"
 --strict --scatter "cubemxtest_forled\cubemxtest_forled.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "cubemxtest_forled.map" -o cubemxtest_forled\cubemxtest_forled.axf

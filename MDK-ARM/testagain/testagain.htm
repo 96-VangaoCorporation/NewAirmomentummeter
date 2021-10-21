@@ -3,7 +3,7 @@
 <title>Static Call Graph - [testagain\testagain.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image testagain\testagain.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Thu Oct 21 00:09:07 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Oct 21 09:34:07 2021
 <BR><P>
 <H3>Maximum Stack Usage =        372 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -18,7 +18,7 @@ Mutually Recursive functions
  <LI><a href="#[9]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[9]">NMI_Handler</a><BR>
  <LI><a href="#[6c]">UART_EndRxTransfer</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6c]">UART_EndRxTransfer</a><BR>
  <LI><a href="#[d]">UsageFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[d]">UsageFault_Handler</a><BR>
- <LI><a href="#[88]">usmart_strcmp</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[88]">usmart_strcmp</a><BR>
+ <LI><a href="#[89]">usmart_strcmp</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[89]">usmart_strcmp</a><BR>
  <LI><a href="#[92]">usmart_strcopy</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[92]">usmart_strcopy</a><BR>
  <LI><a href="#[8e]">usmart_search_nextc</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[8e]">usmart_search_nextc</a><BR>
 </UL>
@@ -129,9 +129,11 @@ Global Symbols
 
 <P><STRONG><a name="[99]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[9a]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+<P><STRONG><a name="[9a]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
 
-<P><STRONG><a name="[9b]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[9b]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[9c]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
 
 <P><STRONG><a name="[8]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32f401xc.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xc.o(RESET)
@@ -318,9 +320,9 @@ Global Symbols
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[9c]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[9d]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[9d]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[9e]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[54]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -332,7 +334,7 @@ Global Symbols
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
-<P><STRONG><a name="[9e]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[9f]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[56]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -342,13 +344,13 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[9f]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[a0]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[52]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[a0]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<P><STRONG><a name="[a1]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 
 <P><STRONG><a name="[50]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
@@ -356,11 +358,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[a1]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[a2]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
-<P><STRONG><a name="[a2]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[a3]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
-<P><STRONG><a name="[a3]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[a4]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
 <P><STRONG><a name="[c]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.BusFault_Handler))
 <BR><BR>[Calls]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
@@ -685,21 +687,22 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[a4]"></a>__1printf$8</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
+<P><STRONG><a name="[a5]"></a>__1printf$8</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
 
-<P><STRONG><a name="[8a]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8))
+<P><STRONG><a name="[87]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_scan
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_scan
 <LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_exe
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_sys_cmd_exe
 </UL>
 
-<P><STRONG><a name="[a5]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[a6]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[a6]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[a7]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[a7]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[a8]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
 <P><STRONG><a name="[83]"></a>delay_init</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, delay.o(i.delay_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = delay_init
@@ -726,7 +729,7 @@ Global Symbols
 <P><STRONG><a name="[4e]"></a>fputc</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, usart_vangao.o(i.fputc))
 <BR>[Address Reference Count : 1]<UL><LI> printf8.o(i.__0printf$8)
 </UL>
-<P><STRONG><a name="[4a]"></a>main</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[4a]"></a>main</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = main &rArr; SystemClock_Config &rArr; HAL_RCC_ClockConfig &rArr; HAL_RCC_GetSysClockFreq &rArr; __aeabi_uldivmod
 </UL>
 <BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
@@ -735,6 +738,7 @@ Global Symbols
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
 <LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
@@ -753,9 +757,9 @@ Global Symbols
 <P><STRONG><a name="[5]"></a>usmart_cmd_rec</STRONG> (Thumb, 144 bytes, Stack size 104 bytes, usmart.o(i.usmart_cmd_rec))
 <BR><BR>[Stack]<UL><LI>Max Depth = 372<LI>Call Chain = usmart_cmd_rec &rArr; usmart_get_fparam &rArr; usmart_str2num
 </UL>
-<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcmp
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fparam
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fname
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcmp
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fparam
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fname
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
@@ -763,8 +767,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 188<LI>Call Chain = usmart_exe &rArr; usmart_get_fname
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_parmpos
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fname
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fname
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_reset_runtime
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_runtime
 </UL>
@@ -773,7 +777,7 @@ Global Symbols
 <P><STRONG><a name="[8f]"></a>usmart_get_aparm</STRONG> (Thumb, 166 bytes, Stack size 20 bytes, usmart_str.o(i.usmart_get_aparm))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = usmart_get_aparm
 </UL>
-<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fparam
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fparam
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_sys_cmd_exe
 </UL>
 
@@ -783,10 +787,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_sys_cmd_exe
 </UL>
 
-<P><STRONG><a name="[87]"></a>usmart_get_fname</STRONG> (Thumb, 358 bytes, Stack size 60 bytes, usmart_str.o(i.usmart_get_fname))
+<P><STRONG><a name="[88]"></a>usmart_get_fname</STRONG> (Thumb, 358 bytes, Stack size 60 bytes, usmart_str.o(i.usmart_get_fname))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = usmart_get_fname
 </UL>
-<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcmp
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcmp
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_search_nextc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_exe
@@ -794,7 +798,7 @@ Global Symbols
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_sys_cmd_exe
 </UL>
 
-<P><STRONG><a name="[89]"></a>usmart_get_fparam</STRONG> (Thumb, 208 bytes, Stack size 240 bytes, usmart_str.o(i.usmart_get_fparam))
+<P><STRONG><a name="[8a]"></a>usmart_get_fparam</STRONG> (Thumb, 208 bytes, Stack size 240 bytes, usmart_str.o(i.usmart_get_fparam))
 <BR><BR>[Stack]<UL><LI>Max Depth = 268<LI>Call Chain = usmart_get_fparam &rArr; usmart_str2num
 </UL>
 <BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strlen
@@ -809,7 +813,7 @@ Global Symbols
 <P><STRONG><a name="[8b]"></a>usmart_get_parmpos</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, usmart_str.o(i.usmart_get_parmpos))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usmart_get_parmpos
 </UL>
-<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fparam
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fparam
 <LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_exe
 </UL>
 
@@ -835,7 +839,7 @@ Global Symbols
 <P><STRONG><a name="[7]"></a>usmart_scan</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, usmart.o(i.usmart_scan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = usmart_scan &rArr; usmart_sys_cmd_exe &rArr; usmart_get_fname
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_sys_cmd_exe
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
@@ -844,7 +848,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_search_nextc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_search_nextc
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fname
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fname
 </UL>
 
 <P><STRONG><a name="[90]"></a>usmart_str2num</STRONG> (Thumb, 214 bytes, Stack size 28 bytes, usmart_str.o(i.usmart_str2num))
@@ -852,15 +856,15 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_pow
 </UL>
-<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fparam
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fparam
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_sys_cmd_exe
 </UL>
 
-<P><STRONG><a name="[88]"></a>usmart_strcmp</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, usmart_str.o(i.usmart_strcmp))
-<BR><BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcmp
+<P><STRONG><a name="[89]"></a>usmart_strcmp</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, usmart_str.o(i.usmart_strcmp))
+<BR><BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcmp
 </UL>
-<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcmp
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fname
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcmp
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fname
 <LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_cmd_rec
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_sys_cmd_exe
 </UL>
@@ -869,22 +873,22 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcopy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcopy
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fparam
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fparam
 </UL>
 
 <P><STRONG><a name="[91]"></a>usmart_strlen</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, usmart_str.o(i.usmart_strlen))
-<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fparam
+<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fparam
 </UL>
 
 <P><STRONG><a name="[93]"></a>usmart_sys_cmd_exe</STRONG> (Thumb, 1458 bytes, Stack size 72 bytes, usmart.o(i.usmart_sys_cmd_exe))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = usmart_sys_cmd_exe &rArr; usmart_get_fname
 </UL>
-<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcmp
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcmp
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_str2num
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fname
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_fname
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_cmdname
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_aparm
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_scan
 </UL>
@@ -933,7 +937,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 </UL>
 
-<P><STRONG><a name="[80]"></a>_printf_core</STRONG> (Thumb, 996 bytes, Stack size 104 bytes, printf8.o(i._printf_core), UNUSED)
+<P><STRONG><a name="[80]"></a>_printf_core</STRONG> (Thumb, 984 bytes, Stack size 104 bytes, printf8.o(i._printf_core), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod

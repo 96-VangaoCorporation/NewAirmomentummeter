@@ -1,4 +1,4 @@
---cpu Cortex-M4.fp
+--cpu=Cortex-M4.fp.sp
 "testagain\startup_stm32f401xc.o"
 "testagain\main.o"
 "testagain\gpio.o"
@@ -30,6 +30,6 @@
 "testagain\usmart_str.o"
 "testagain\usmart.o"
 --library_type=microlib --strict --scatter "testagain\testagain.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "testagain.map" -o testagain\testagain.axf

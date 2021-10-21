@@ -106,7 +106,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 		HAL_Delay(1000);
 //		 HAL_UART_Transmit(&huart1, (uint8_t *)ZZX,3, 0xffff);
-//		printf("精神上加油！\r\n");
+	printf("printf可以使用\r\n");
   }
   /* USER CODE END 3 */
 }

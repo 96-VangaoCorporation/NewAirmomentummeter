@@ -4,7 +4,7 @@ testagain\usmart_str.o: ..\Vangao\SYSTEM\sys\sys.h
 testagain\usmart_str.o: ..\Vangao\SYSTEM\sys\stm32f4xx.h
 testagain\usmart_str.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h
 testagain\usmart_str.o: ../Drivers/CMSIS/Include/core_cm4.h
-testagain\usmart_str.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+testagain\usmart_str.o: E:\KEIL5.25\ARM\ARMCC\Bin\..\include\stdint.h
 testagain\usmart_str.o: ../Drivers/CMSIS/Include/cmsis_version.h
 testagain\usmart_str.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 testagain\usmart_str.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -16,7 +16,7 @@ testagain\usmart_str.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
 testagain\usmart_str.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 testagain\usmart_str.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 testagain\usmart_str.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-testagain\usmart_str.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+testagain\usmart_str.o: E:\KEIL5.25\ARM\ARMCC\Bin\..\include\stddef.h
 testagain\usmart_str.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 testagain\usmart_str.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 testagain\usmart_str.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h

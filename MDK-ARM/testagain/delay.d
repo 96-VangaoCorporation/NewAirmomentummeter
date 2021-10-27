@@ -4,7 +4,7 @@ testagain\delay.o: ..\Vangao\SYSTEM\sys\sys.h
 testagain\delay.o: ..\Vangao\SYSTEM\sys\stm32f4xx.h
 testagain\delay.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h
 testagain\delay.o: ../Drivers/CMSIS/Include/core_cm4.h
-testagain\delay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+testagain\delay.o: E:\KEIL5.25\ARM\ARMCC\Bin\..\include\stdint.h
 testagain\delay.o: ../Drivers/CMSIS/Include/cmsis_version.h
 testagain\delay.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 testagain\delay.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -16,7 +16,7 @@ testagain\delay.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
 testagain\delay.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 testagain\delay.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 testagain\delay.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-testagain\delay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+testagain\delay.o: E:\KEIL5.25\ARM\ARMCC\Bin\..\include\stddef.h
 testagain\delay.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 testagain\delay.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 testagain\delay.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
